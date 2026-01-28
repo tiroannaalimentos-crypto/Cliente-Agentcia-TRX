@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Império Facas | Grupo VIP Exclusivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #8E6D31 100%);
+        }
+        .gold-text {
+            color: #C5A059;
+        }
+        .bg-matte {
+            background-color: #1A1A1A;
+        }
+        .border-gold {
+            border-color: #C5A059;
+        }
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-gold:hover {
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+        }
+        .animate-gold-pulse {
+            animation: pulse-gold 2s infinite;
+        }
+
+        @keyframes subtle-glow {
+            0%, 100% {
+                filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.3));
+                transform: scale(1);
+            }
+            50% {
+                filter: drop-shadow(0 0 30px rgba(197, 160, 89, 0.6));
+                transform: scale(1.03);
+            }
+        }
+        .animate-subtle-glow {
+            animation: subtle-glow 4s ease-in-out infinite;
+        }
+
+        /* Configurações para Exportação em PDF (Impressão) */
+        @media print {
+            body {
+                background-color: #000000 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none !important;
+            }
+            section {
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            .gold-gradient {
+                background: #C5A059 !important;
+            }
+            .bg-matte {
+                background-color: #1A1A1A !important;
+            }
+            .gold-text {
+                color: #C5A059 !important;
+            }
+            /* Garante que imagens apareçam no PDF */
+            img {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
