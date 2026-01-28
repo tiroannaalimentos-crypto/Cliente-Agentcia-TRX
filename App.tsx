@@ -2,7 +2,6 @@
 import React from 'react';
 import { Hero } from './components/Hero';
 import { Benefits } from './components/Benefits';
-import { Authority } from './components/Authority';
 import { Scarcity } from './components/Scarcity';
 import { Testimonials } from './components/Testimonials';
 import { SocialGallery } from './components/SocialGallery';
@@ -17,7 +16,6 @@ function App() {
       <Hero />
       <TrustBar />
       <Benefits />
-      <Authority />
       <Scarcity />
       <Testimonials />
       <SocialGallery />
